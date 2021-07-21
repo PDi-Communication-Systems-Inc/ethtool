@@ -461,7 +461,7 @@ static int rxflow_str_to_type(const char *str)
 }
 
 #define PACKAGE "ethtool"
-#define VERSION "v3.18"
+#define VERSION "v4.0"  // from configure.ac
 
 static int do_version(struct cmd_context *ctx)
 {
