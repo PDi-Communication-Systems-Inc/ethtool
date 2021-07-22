@@ -44,6 +44,7 @@ LOCAL_SRC_FILES := \
       ixgbevf.c \
       tg3.c \
       stmmac.c \
-      rxclass.c
+      rxclass.c \
+      vmxnet3.c
 LOCAL_MODULE := ethtool
 include $(BUILD_EXECUTABLE)
