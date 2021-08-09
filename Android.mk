@@ -48,6 +48,7 @@ LOCAL_SRC_FILES := \
       vmxnet3.c	\
       fjes.c \
       qsfp.c \
-      sff-common.c
+      sff-common.c \
+      lan78xx.c
 LOCAL_MODULE := ethtool
 include $(BUILD_EXECUTABLE)
