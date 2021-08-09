@@ -1,3 +1,36 @@
+Version 4.19 - November 2, 2018
+	* Feature: support combinations of FEC modes
+	* Feature: better syntax for combinations of FEC modes
+	* Fix: Fix uninitialized variable use at qsfp dump
+
+Version 4.18 - August 24, 2018
+	* Feature: Add support for WAKE_FILTER (WoL using filters)
+	* Feature: Add support for action value -2 (wake-up filter)
+	* Fix: document WoL filters option also in help message
+	* Feature: ixgbe dump strings for security registers
+
+Version 4.17 - June 15, 2018
+
+	* Fix: In ethtool.8, remove superfluous and incorrect \c.
+	* Fix: fix uninitialized return value
+	* Fix: fix RING_VF assignment
+	* Fix: remove unused global variable
+	* Fix: several fixes in do_gregs()
+	* Fix: correctly free hkey when get_stringset() fails
+	* Fix: remove unreachable code
+	* Fix: fix stack clash in do_get_phy_tunable and do_set_phy_tunable
+	* Feature: Add register dump support for MICROCHIP LAN78xx
+
+Version 4.16 - April 13, 2018
+
+	* Feature: add support for extra RSS contexts and RSS steering filters
+	* Feature: Document RSS context control and RSS filters
+	* Fix: don't fall back to grxfhindir when context was specified
+	* Fix: correct display of VF when showing vf/queue filters
+	* Fix: show VF and queue in the help for -N
+	* Fix: correct VF index values for the ring_cookie parameter
+	* Feature: Add SFF 8636 date code parsing support
+
 Version 4.15 - February 1, 2018
 
 	* Feature: Support for FEC encoding control
@@ -6,7 +39,6 @@ Version 4.15 - February 1, 2018
 	* Fix: Revert "ethtool: Add DMA Coalescing support"
 	* Feature: Add ETHTOOL_RESET support via --reset command
 	* Fix: fix MFLCN register dump for 82599 and newer
-
 
 Version 4.13 - October 27, 2017
 

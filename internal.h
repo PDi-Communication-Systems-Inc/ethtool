@@ -332,11 +332,11 @@ int vmxnet3_dump_regs(struct ethtool_drvinfo *info, struct ethtool_regs *regs);
 
 /* Rx flow classification */
 int rxclass_parse_ruleopts(struct cmd_context *ctx,
-			   struct ethtool_rx_flow_spec *fsp);
+			   struct ethtool_rx_flow_spec *fsp, __u32 *rss_context);
 int rxclass_rule_getall(struct cmd_context *ctx);
 int rxclass_rule_get(struct cmd_context *ctx, __u32 loc);
 int rxclass_rule_ins(struct cmd_context *ctx,
-		     struct ethtool_rx_flow_spec *fsp);
+		     struct ethtool_rx_flow_spec *fsp, __u32 rss_context);
 int rxclass_rule_del(struct cmd_context *ctx, __u32 loc);
 
 /* Module EEPROM parsing code */
@@ -350,4 +350,8 @@ void sff8636_show_all(const __u8 *id, __u32 eeprom_len);
 
 /* FUJITSU Extended Socket network device */
 int fjes_dump_regs(struct ethtool_drvinfo *info, struct ethtool_regs *regs);
+
+/* MICROCHIP LAN78XX USB ETHERNET Controller */
+int lan78xx_dump_regs(struct ethtool_drvinfo *info, struct ethtool_regs *regs);
+
 #endif /* ETHTOOL_INTERNAL_H__ */
